@@ -1,0 +1,25 @@
+# 股票列表：支持 A股（000333.SZ）、美股（AAPL）、港股（0700.HK）
+stocks:
+  - NVO
+  - GOOGL
+  - TSLA
+  - 000333.SZ
+  - 600519.SS
+  - WMT
+
+# 阈值：低估提醒分位（如 30 表示低于历史30%分位时提醒）
+threshold_percentile: 30
+
+# 邮件推送配置
+email:
+  enable: true
+  smtp_server: smtp.example.com
+  smtp_port: 587
+  sender: your_email@example.com
+  password: your_email_password
+  receiver: your_email@example.com
+
+# Server酱微信推送（https://sct.ftqq.com）
+wechat:
+  enable: true
+  sckey: YOUR_SERVER_CHAN_KEY
